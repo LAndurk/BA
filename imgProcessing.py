@@ -85,11 +85,10 @@ def detect_damage(segmented_img):
             for point in approx:
                 y = point[0, 0]
                 x = point[0, 1]
-                if x < ignored_border or 
-				   x > (img_output.shape[0] - ignored_border) or 
-				   y < ignored_border or 
-				   y > (img_output.shape[1] - ignored_border):
-				   
+                if x < ignored_border \
+                        or x > (img_output.shape[0] - ignored_border) \
+                        or y < ignored_border \
+                        or y > (img_output.shape[1] - ignored_border):
                     points_at_border += 1
 
             # set result variable

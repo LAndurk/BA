@@ -3,7 +3,7 @@ import helperFunctions as hf
 import imgProcessing
 
 
-folder = "gfk"
+folder = "D:/Uni/BA/Abgabe/gfk"
 picture = "3"
 
 path = ''.join([folder, "/", picture, ".png"])
